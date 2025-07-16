@@ -1,0 +1,42 @@
+{
+"13":
+    {
+    "id": 13,
+    "nome": "João Lopes",
+    "partido": "PDB",
+    "imagem": "13.jpg",
+    "cargo": "Prefeito(a)",
+    "estado": "AM"
+    },
+
+"22":
+    {
+    "id": 22,
+    "nome": "Maria Oliveira",
+    "partido": "PDA",
+    "imagem": "22.jpg",
+    "cargo": "Prefeito(a)",
+    "estado": "AM"
+    },
+
+"18":
+    {
+    "id": 18,
+    "nome": "Vitória Oliveira",
+    "partido": "PNB",
+    "imagem": "18.jpg",
+    "cargo": "Prefeito(a)",
+    "estado": "AM"
+    },
+
+"24":
+    {
+    "id": 24,
+    "nome": "Lucas Almeida",
+    "partido": "PV",
+    "imagem": "24.jpg",
+    "cargo": "Prefeito(a)",
+    "estado": "AM"
+    }
+
+}
