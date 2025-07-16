@@ -1,155 +1,50 @@
 [
     {
-        "voto": "13"
-    },
-    {
         "voto": "22"
-    },
-    {
-        "voto": "22"
-    },
-    {
-        "voto": "18"
     },
     {
         "voto": "24"
     },
     {
-        "voto": "24"
+        "voto": "NULO"
+    },
+    {
+        "voto": "NULO"
+    },
+    {
+        "voto": "NULO"
+    },
+    {
+        "voto": "NULO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
+    },
+    {
+        "voto": "BRANCO"
     },
     {
         "voto": "22"
     },
     {
-        "voto": "18"
-    },
-    {
-        "voto": "13"
-    },
-    {
-        "voto": "22"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "13"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
-        "voto": "NULO"
-    },
-    {
         "voto": "BRANCO"
     },
     {
         "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "BRANCO"
-    },
-    {
-        "voto": "13"
-    },
-    {
-        "voto": "13"
-    },
-    {
-        "voto": "13"
-    },
-    {
-        "voto": "22"
-    },
-    {
-        "voto": "18"
-    },
-    {
-        "voto": "24"
-    },
-    {
-        "voto": "13"
     }
 ]

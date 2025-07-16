@@ -86,6 +86,15 @@ def confirmar_voto():
     imagem_label.image = None
     entrada.delete(0, tk.END)
 
+def votar_branco():
+    registrar_voto("BRANCO")
+    nome_var.set("VOTO CONFIRMADO")
+    partido_var.set("")
+    imagem_label.config(image='')
+    imagem_label.image = None
+    entrada.delete(0, tk.END)
+    os.system('aplay confirma.wav')
+
 def gerar_relatorio():
     if not os.path.exists("votos.json"):
         tkinter.messagebox.showinfo("Relatório", "Nenhum voto registrado.")
@@ -168,8 +177,10 @@ criar_botao(0).grid(row=3, column=1, padx=5, pady=5)
 botoes_frame = tk.Frame(janela)
 botoes_frame.pack(pady=20)
 
-tk.Button(botoes_frame, text="Confirmar", font=("Arial", 14, "bold"), bg="#4CAF50", fg="white", width=10, command=confirmar_voto).grid(row=0, column=0, padx=5)
-tk.Button(botoes_frame, text="Corrige", font=("Arial", 14, "bold"), bg="#FFA500", fg="white", width=10, command=limpar).grid(row=0, column=1, padx=5)
-tk.Button(botoes_frame, text="Anular", font=("Arial", 14, "bold"), bg="#F44336", fg="white", width=10, command=anular).grid(row=0, column=2, padx=5)
+tk.Button(
+    botoes_frame, text="Branco", font=("Arial", 14, "bold"), bg="#FCFCFC", width=10, command=votar_branco
+).grid(row=0, column=0, padx=5)
+tk.Button(botoes_frame, text="Corrige", font=("Arial", 14, "bold"), bg="#FFA500", width=10, command=limpar).grid(row=0, column=1, padx=5)
+tk.Button(botoes_frame, text="Confirmar", font=("Arial", 14, "bold"), bg="#4CAF50", width=10, command=confirmar_voto).grid(row=0, column=2, padx=5)
 
 janela.mainloop()
