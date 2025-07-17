@@ -2,6 +2,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import json
 import os
+from playsound import playsound
 import tkinter.messagebox
 
 with open("candidatos.json", "r", encoding="utf-8") as f:
@@ -28,7 +29,7 @@ def exibir_candidato():
         caminho_imagem = os.path.join("imagens", dados['imagem'])
         if os.path.exists(caminho_imagem):
             img = Image.open(caminho_imagem)
-            img = img.resize((125, 150), Image.LANCZOS)
+            img = img.resize((150, 150), Image.LANCZOS)
             img_tk = ImageTk.PhotoImage(img)
             imagem_label.config(image=img_tk)
             imagem_label.image = img_tk
@@ -72,15 +73,15 @@ def confirmar_voto():
     if numero in candidatos:
         registrar_voto(numero)
         nome_var.set("VOTO CONFIRMADO")
-        os.system('aplay confirma.wav')
+        playsound("confirma.wav")
     elif numero.strip() == "":
         registrar_voto("BRANCO")
         nome_var.set("VOTO BRANCO")
-        os.system('aplay confirma.wav')
+        playsound("confirma.wav")
     else:
         registrar_voto("NULO")
         nome_var.set("VOTO NULO")
-        os.system('aplay confirma.wav')
+        playsound("confirma.wav")
     partido_var.set("")
     imagem_label.config(image='')
     imagem_label.image = None
@@ -93,7 +94,7 @@ def votar_branco():
     imagem_label.config(image='')
     imagem_label.image = None
     entrada.delete(0, tk.END)
-    os.system('aplay confirma.wav')
+    playsound("confirma.wav")
 
 def gerar_relatorio():
     if not os.path.exists("votos.json"):
@@ -177,9 +178,7 @@ criar_botao(0).grid(row=3, column=1, padx=5, pady=5)
 botoes_frame = tk.Frame(janela)
 botoes_frame.pack(pady=20)
 
-tk.Button(
-    botoes_frame, text="Branco", font=("Arial", 14, "bold"), bg="#FCFCFC", width=10, command=votar_branco
-).grid(row=0, column=0, padx=5)
+tk.Button(botoes_frame, text="Branco", font=("Arial", 14, "bold"), bg="#FCFCFC", width=10, command=votar_branco).grid(row=0, column=0, padx=5)
 tk.Button(botoes_frame, text="Corrige", font=("Arial", 14, "bold"), bg="#FFA500", width=10, command=limpar).grid(row=0, column=1, padx=5)
 tk.Button(botoes_frame, text="Confirmar", font=("Arial", 14, "bold"), bg="#4CAF50", width=10, command=confirmar_voto).grid(row=0, column=2, padx=5)
 

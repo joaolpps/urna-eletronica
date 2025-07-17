@@ -2,41 +2,41 @@
 "13":
     {
     "id": 13,
-    "nome": "João Lopes",
-    "partido": "PDB",
-    "imagem": "13.jpg",
-    "cargo": "Prefeito(a)",
-    "estado": "AM"
+    "nome": "Luiz Inácio Lula",
+    "partido": "PT",
+    "imagem": "Luiz_Inácio_Lula.jpg",
+    "cargo": "Presidente",
+    "estado": "PE"
     },
 
 "22":
     {
     "id": 22,
-    "nome": "Maria Oliveira",
-    "partido": "PDA",
-    "imagem": "22.jpg",
-    "cargo": "Prefeito(a)",
-    "estado": "AM"
+    "nome": "Jair Bolsonaro",
+    "partido": "PL",
+    "imagem": "Jair_Bolsonaro.jpg",
+    "cargo": "Presidente",
+    "estado": "RJ"
     },
 
-"18":
+"14":
     {
-    "id": 18,
-    "nome": "Vitória Oliveira",
-    "partido": "PNB",
-    "imagem": "18.jpg",
-    "cargo": "Prefeito(a)",
-    "estado": "AM"
+    "id": 14,
+    "nome": "Dilma Rouseff",
+    "partido": "PT",
+    "imagem": "Dilma_Rouseff.jpg",
+    "cargo": "Presidente",
+    "estado": "MG"
     },
 
-"24":
+"15":
     {
-    "id": 24,
-    "nome": "Lucas Almeida",
-    "partido": "PV",
-    "imagem": "24.jpg",
-    "cargo": "Prefeito(a)",
-    "estado": "AM"
+    "id": 15,
+    "nome": "Michel Temer",
+    "partido": "MDB",
+    "imagem": "Michel_Temer.jpg",
+    "cargo": "Presidente",
+    "estado": "SP"
     }
 
 }
